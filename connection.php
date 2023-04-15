@@ -20,18 +20,19 @@ if (!$conn) {
 }
 echo "Conexión exitosa";
 
-// echo $nombre= $_POST["nombre"];
-// echo $apellidos = $_POST["apellidos"];
-// echo $mail = $_POST["mail"];
-// echo $telefono= $_POST["telefono"];
-// echo $horario= $_POST["horario"];
+echo $nombre= $_POST["nombre"];
+echo $apellidos = $_POST["apellidos"];
+echo $mail = $_POST["mail"];
+echo $telefono= $_POST["telefono"];
+echo $horario= $_POST["horario"];
+
 echo $fuente= "SITIO INVEX";
 
-echo $nombre= 'prueba';
-echo $apellidos = 'prueba';
-echo $mail = 'prueba';
-echo $telefono= 'prueba';
-echo $horario= 'prueba';
+// echo $nombre= 'prueba';
+// echo $apellidos = 'prueba';
+// echo $mail = 'prueba';
+// echo $telefono= 'prueba';
+// echo $horario= 'prueba';
 
 
 

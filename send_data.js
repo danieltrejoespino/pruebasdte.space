@@ -2,9 +2,11 @@
 //   fetch('http://www.tarjetavolaris-invex.com.mx/scripts/contacto.php', {
   fetch('https://pruebasdte.space/GitHub/connection.php', {
     method: 'POST',
-    
+    headers: {
+        'Content-Type': 'application/json'
+    },
     body: JSON.stringify({
-      nombre: 'prueba',
+      nombre: 'pruebaas',
       apellidos: 'prueba',
       telefono: 'prueba',
       mail: 'prueba@prueba.com',
