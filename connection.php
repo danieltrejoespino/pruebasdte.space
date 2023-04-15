@@ -20,18 +20,18 @@ if (!$conn) {
 }
 echo "Conexión exitosa";
 
-// echo $nombre= $_REQUEST["nombre"];
-// echo $apellidos = $_REQUEST["apellidos"];
-// echo $mail = $_REQUEST["mail"];
-// echo $telefono= $_REQUEST["telefono"];
-// echo $horario= $_REQUEST["horario"];
-// echo $fuente= "SITIO INVEX";
-echo $nombre= 'prueba';
-echo $apellidos = 'prueba';
-echo $mail = 'prueba';
-echo $telefono= 'prueba';
-echo $horario= 'prueba';
+echo $nombre= $_REQUEST["nombre"];
+echo $apellidos = $_REQUEST["apellidos"];
+echo $mail = $_REQUEST["mail"];
+echo $telefono= $_REQUEST["telefono"];
+echo $horario= $_REQUEST["horario"];
 echo $fuente= "SITIO INVEX";
+// echo $nombre= 'prueba';
+// echo $apellidos = 'prueba';
+// echo $mail = 'prueba';
+// echo $telefono= 'prueba';
+// echo $horario= 'prueba';
+// echo $fuente= "SITIO INVEX";
 
 
 $sql_insert="INSERT INTO contacto (cont_nombre, cont_apellidos,cont_mail,cont_telefono,cont_horario,cont_fuente)
