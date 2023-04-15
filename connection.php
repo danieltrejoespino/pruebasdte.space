@@ -20,11 +20,11 @@ if (!$conn) {
 }
 echo "Conexión exitosa";
 
-echo $nombre= $_REQUEST["nombre"];
-echo $apellidos = $_REQUEST["apellidos"];
-echo $mail = $_REQUEST["mail"];
-echo $telefono= $_REQUEST["telefono"];
-echo $horario= $_REQUEST["horario"];
+echo $nombre= $_POST["nombre"];
+echo $apellidos = $_POST["apellidos"];
+echo $mail = $_POST["mail"];
+echo $telefono= $_POST["telefono"];
+echo $horario= $_POST["horario"];
 echo $fuente= "SITIO INVEX";
 // echo $nombre= 'prueba';
 // echo $apellidos = 'prueba';
