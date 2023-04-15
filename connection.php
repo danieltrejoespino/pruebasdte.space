@@ -5,6 +5,8 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+echo 'pruebas';
+
 $servername = "sql141.main-hosting.eu"; // Cambia esto por el nombre de tu servidor MySQL
 $dbname = "u466684088_prueba_1"; // Cambia esto por el nombre de tu base de datos
 $username = "u466684088_prueba_1"; // Cambia esto por tu nombre de usuario MySQL
