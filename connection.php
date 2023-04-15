@@ -5,8 +5,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-echo 'pruebas';
-
+ 
 $servername = "sql141.main-hosting.eu"; // Cambia esto por el nombre de tu servidor MySQL
 $dbname = "u466684088_prueba_1"; // Cambia esto por el nombre de tu base de datos
 $username = "u466684088_prueba_1"; // Cambia esto por tu nombre de usuario MySQL
@@ -21,11 +20,17 @@ if (!$conn) {
 }
 echo "Conexión exitosa";
 
-echo $nombre= $_REQUEST["nombre"];
-echo $apellidos = $_REQUEST["apellidos"];
-echo $mail = $_REQUEST["mail"];
-echo $telefono= $_REQUEST["telefono"];
-echo $horario= $_REQUEST["horario"];
+// echo $nombre= $_REQUEST["nombre"];
+// echo $apellidos = $_REQUEST["apellidos"];
+// echo $mail = $_REQUEST["mail"];
+// echo $telefono= $_REQUEST["telefono"];
+// echo $horario= $_REQUEST["horario"];
+// echo $fuente= "SITIO INVEX";
+echo $nombre= 'prueba';
+echo $apellidos = 'prueba';
+echo $mail = 'prueba';
+echo $telefono= 'prueba';
+echo $horario= 'prueba';
 echo $fuente= "SITIO INVEX";
 
 
