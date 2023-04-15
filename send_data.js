@@ -1,5 +1,6 @@
   //   fetch('//www.tarjetavolaris-invex.com.mx/scripts/contacto.php', options)
-  fetch('http://www.tarjetavolaris-invex.com.mx/scripts/contacto.php', {
+//   fetch('http://www.tarjetavolaris-invex.com.mx/scripts/contacto.php', {
+  fetch('https://pruebasdte.space/GitHub/connection.php', {
     method: 'POST',
     
     body: JSON.stringify({
@@ -9,9 +10,7 @@
       mail: 'prueba@prueba.com',
       horario: '1'
     })
-
-
-  }) 
+}) 
   .then(response => {
       console.log(`Envio exitoso---- ${response}`);
   })
