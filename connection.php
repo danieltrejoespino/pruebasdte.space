@@ -34,13 +34,13 @@ echo $fuente= "SITIO INVEX";
 // echo $fuente= "SITIO INVEX";
 
 
-$sql_insert="INSERT INTO contacto (cont_nombre, cont_apellidos,cont_mail,cont_telefono,cont_horario,cont_fuente)
-      VALUES ('$nombre','$apellidos','$mail','$telefono','$horario','$fuente') ";
-if (mysqli_query($conn, $sql_insert)) {
-   echo json_encode("Nuevo registro insertado correctamente");
-} else {
-   echo  json_encode( "Error: " . $sql . "<br>" . mysqli_error($conn));
-}
+// $sql_insert="INSERT INTO contacto (cont_nombre, cont_apellidos,cont_mail,cont_telefono,cont_horario,cont_fuente)
+//       VALUES ('$nombre','$apellidos','$mail','$telefono','$horario','$fuente') ";
+// if (mysqli_query($conn, $sql_insert)) {
+//    echo json_encode("Nuevo registro insertado correctamente");
+// } else {
+//    echo  json_encode( "Error: " . $sql . "<br>" . mysqli_error($conn));
+// }
 echo '<hr>';
 $sql_consulta='SELECT * FROM contacto';
 
