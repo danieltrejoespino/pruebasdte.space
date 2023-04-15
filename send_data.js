@@ -24,13 +24,12 @@
 const datos = new FormData();
 		datos.append('nombre', 'Juan');
 		datos.append('apellidos', 'Pérez');
-		datos.append('telefono', 30);
+		datos.append('telefono', 4428450036);
+		datos.append('mail', 'prueba@prueba.com');
+		datos.append('horario', 1);
 
 fetch('https://pruebasdte.space/GitHub/connection.php', {
     method: 'POST',
-    headers: {
-        'Content-Type': 'application/json'
-    },
     body: datos
 }) 
   .then(response => {
