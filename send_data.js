@@ -21,23 +21,23 @@
 //   });
 
 
-// const datos = new FormData();
-		// datos.append('nombre', 's');
-		// datos.append('apellidos', 'Pérez');
-		// datos.append('telefono', 1234567890);
-		// datos.append('mail', 'prueba@prueba.com');
-		// datos.append('horario', 1);
+const datos = new FormData();
+		datos.append('nombre', 's');
+		datos.append('apellidos', 'Pérez');
+		datos.append('telefono', 1234567890);
+		datos.append('mail', 'prueba@prueba.com');
+		datos.append('horario', 1);
 
-// fetch('https://pruebasdte.space/GitHub/contacto.php', {
-//     method: 'POST',
-//     body: datos
-// }) 
-//   .then(response => {
-//       console.log(`Envio exitoso---- ${response}`);
-//   })
-//   .catch(error => {
-//       console.log('EROR----'+error);
-//   });
+fetch('https://pruebasdte.space/GitHub/contacto.php', {
+    method: 'POST',
+    body: datos
+}) 
+  .then(response => {
+      console.log(`Envio exitoso---- ${response}`);
+  })
+  .catch(error => {
+      console.log('EROR----'+error);
+  });
 
   
 
