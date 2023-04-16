@@ -28,7 +28,20 @@ const datos = new FormData();
 		datos.append('mail', 'prueba@prueba.com');
 		datos.append('horario', 1);
 
-fetch('https://pruebasdte.space/GitHub/connection.php', {
+// fetch('https://pruebasdte.space/GitHub/contacto.php', {
+//     method: 'POST',
+//     body: datos
+// }) 
+//   .then(response => {
+//       console.log(`Envio exitoso---- ${response}`);
+//   })
+//   .catch(error => {
+//       console.log('EROR----'+error);
+//   });
+
+  
+
+fetch('https://pruebasdte.space/GitHub/contacto.php', {
     method: 'POST',
     body: datos
 }) 
@@ -38,10 +51,6 @@ fetch('https://pruebasdte.space/GitHub/connection.php', {
   .catch(error => {
       console.log('EROR----'+error);
   });
-
-  
-
-
 
 
 
