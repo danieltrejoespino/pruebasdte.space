@@ -1,0 +1,72 @@
+<?php
+header('Access-Control-Allow-Origin: *');
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
+header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, X-Requested-With");
+
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+require('connection.php');
+
+echo $nombre= $_REQUEST["nombre"];
+echo $apellidos = $_REQUEST["apellidos"];
+echo $mail = $_REQUEST["mail"];
+echo $telefono= $_REQUEST["telefono"];
+echo $horario= $_REQUEST["horario"];
+
+echo $fuente= "SITIO INVEX";
+
+// echo $nombre= 'prueba';
+// echo $apellidos = 'prueba';
+// echo $mail = 'prueba';
+// echo $telefono= 'prueba';
+// echo $horario= 'prueba';
+
+
+
+$sql_insert="INSERT INTO contacto (cont_nombre, cont_apellidos,cont_mail,cont_telefono,cont_horario,cont_fuente)
+      VALUES ('$nombre','$apellidos','$mail','$telefono','$horario','$fuente') ";
+if (mysqli_query($conn, $sql_insert)) {
+   echo json_encode("Nuevo registro insertado correctamente");
+} else {
+   echo  json_encode( "Error: " . $sql . "<br>" . mysqli_error($conn));
+}
+
+mysqli_close($conn);
+
+
+
+
+die();
+echo '<hr>';
+$sql_consulta='SELECT * FROM contacto';
+
+$result = mysqli_query($conn,$sql_consulta);
+if (mysqli_num_rows($result) > 0) {
+   // Crear un array vacío para almacenar los resultados
+   $data = array();
+   
+   // Recorrer los resultados y agregar cada fila al array
+   while($fila = mysqli_fetch_assoc($result)) {
+       $data[] = $fila;
+   }
+   
+   // Convertir el array a un objeto JSON y mostrarlo en pantalla
+   echo json_encode($data);
+} else {
+   echo "No se encontraron resultados";
+}
+
+
+
+// Cerrar la conexión a la base de datos
+mysqli_close($conn);
+
+
+
+?>
+
+
+<!-- https://pruebasdte.space/connection.php?nombre=prueba&apellidos=prueba2&mail=prueba@prueba.com&telefono=12345&horario=1 -->
