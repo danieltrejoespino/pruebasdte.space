@@ -41,17 +41,22 @@ const datos = new FormData();
 
   
 
-fetch('https://pruebasdte.space/GitHub/contacto.php', {
-    method: 'POST',
-    body: datos
-}) 
-  .then(response => {
-      console.log(`Envio exitoso---- ${response}`);
+  const consulta = () =>{
+  const urlS='https://pruebasdte.space/GitHub/consulta.php'
+  fetch(urlS,{
+    method : 'get',
+    headers: {
+      'Content-Type': 'application/json' // Si se espera una respuesta en formato JSON
+    }
   })
-  .catch(error => {
-      console.log('EROR----'+error);
-  });
+  .then(response=>response.json())
+  .then(data=> console.warn(data))
+  .catch(err=>console.error(err))
 
+}
+
+
+consulta()
 
 
 
