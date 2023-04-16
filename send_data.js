@@ -22,9 +22,9 @@
 
 
 const datos = new FormData();
-		datos.append('nombre', 'Juan');
+		datos.append('nombre', 's');
 		datos.append('apellidos', 'Pérez');
-		datos.append('telefono', 4428450036);
+		datos.append('telefono', 1234567890);
 		datos.append('mail', 'prueba@prueba.com');
 		datos.append('horario', 1);
 
