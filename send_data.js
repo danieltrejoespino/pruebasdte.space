@@ -41,24 +41,15 @@ const datos = new FormData();
 
   
 
-  const consulta = () =>{
-  const urlS='https://pruebasdte.space/GitHub/consulta.php'
-  fetch(urlS,{
-    method : 'get',
-    headers: {
-      'Content-Type': 'application/json' // Si se espera una respuesta en formato JSON
-    }
+   
+  fetch('https://pruebasdte.space/GitHub/consulta.php')
+  .then(response => response.json()) // Si se espera una respuesta en formato JSON
+  .then(json => {
+    console.log(json)
   })
-  .then(response=>response.json())
-  .then(data=> console.warn(data))
-  .catch(err=>console.error(err))
-
-}
-
-
-consulta()
-
-
+  .catch(error => {
+    console.log(error)
+  });
 
 
 

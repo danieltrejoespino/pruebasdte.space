@@ -28,6 +28,7 @@ if (mysqli_num_rows($result) > 0) {
 } else {
    echo "No se encontraron resultados";
 }
+header('Content-Type: application/json');
 
 
 
